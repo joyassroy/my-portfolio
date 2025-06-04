@@ -193,3 +193,39 @@ footer input[type="text"],input[type="email"],footer textarea {
    border: none;
    width: 500px;
 }
+/* Responsive media query */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+     .skills-container,.resume-container,footer,.items,.banner,nav,nav>ul{
+        display: flex;
+        flex-direction: column;
+     }
+     nav>ul{
+        gap: 20px;
+     }
+     footer,.about{
+        padding: 20px;
+     }
+     .footer-column{
+        width: 100%;
+     }
+     footer input[type="text"],input[type="email"],footer textarea{
+        width: calc(100% - 40px);
+     }
+     .banner{
+        margin: 20px;
+     }
+     .banner-profile_pic{
+        width: 100%;
+     }
+     .header{
+        background-image: none;
+     }
+     .btn-primary{
+        margin-bottom: 20px;
+     }
+}
